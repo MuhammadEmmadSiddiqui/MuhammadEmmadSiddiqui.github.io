@@ -15,8 +15,8 @@ Welcome to my personal website. I am an AI researcher specializing in Trustworth
 ---
 
 ## Education  
-- **M.S. in Physics** – National University of Computer and Emerging Sciences (Dec 2025)  
-- **B.S. in Physics** – NED University of Engineering & Technology (Sep 2022)  
+- **M.S. in Data Science** – National University of Computer and Emerging Sciences (Dec 2025)  
+- **B.S. in Industrial Engineering** – NED University of Engineering & Technology (Sep 2022)  
 
 ---
 
