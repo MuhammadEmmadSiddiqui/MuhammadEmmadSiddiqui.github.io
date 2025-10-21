@@ -174,7 +174,7 @@ async function initializeNavigation() {
 
 // Fetch and render GitHub repositories
 async function loadAndRenderGitHubRepos() {
-    const username = 'DripNowhy';
+    const username = 'MuhammadEmmadSiddiqui';
     const repoSection = document.querySelector('.github-repo-section');
     if (!repoSection) return;
     repoSection.innerHTML = '<p>Loading repositories...</p>';
