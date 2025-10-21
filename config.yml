@@ -1,0 +1,61 @@
+# Personal information
+profile:
+  name: "Muhammad Emmad Siddiqui"
+  title: "MS Student"
+  department: "Data Science"
+  university: "FAST NUCES"
+  image: "images/Avatar.png"
+
+# Social media links
+social:
+  google_scholar:
+    url: "https://scholar.google.com/citations?user=v_X1SyEAAAAJ&hl=en"
+    icon: "fas fa-graduation-cap"
+    title: "Google Scholar"
+  github:
+    url: "https://github.com/DripNowhy"
+    icon: "fab fa-github"
+    title: "GitHub"
+  twitter:
+    url: "https://x.com/MEmmad_Siddiqui"
+    icon: "fab fa-twitter"
+    title: "Twitter"
+  cv:
+    url: "pdf/CV.pdf"
+    icon: "cv-svg-icon"
+    title: "CV"
+  email:
+    url: "k238020@nu.edu.pk"
+    icon: "fas fa-envelope"
+    title: "Email"
+
+# Navigation links
+navigation:
+  about:
+    url: "#about-anchor"
+    icon: "fas fa-user-circle"
+    title: "About"
+  research:
+    url: "#research-anchor"
+    icon: "fas fa-microscope"
+    title: "Research"
+  news:
+    url: "#news-anchor"
+    icon: "fas fa-newspaper"
+    title: "News"
+  publications:
+    url: "#publications-anchor"
+    icon: "fas fa-book"
+    title: "Publications"
+  github:
+    url: "#github-repos-anchor"
+    icon: "fab fa-github"
+    title: "GitHub"
+  education:
+    url: "#education-anchor"
+    icon: "fas fa-graduation-cap"
+    title: "Education"
+  contact:
+    url: "#contact-anchor"
+    icon: "fas fa-envelope"
+    title: "Contact"
