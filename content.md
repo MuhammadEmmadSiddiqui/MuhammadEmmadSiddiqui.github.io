@@ -59,7 +59,7 @@ education:
     - period: "2023.08 - 2025.12 (Expected)"
       degree: "M.S."
       school: "Data Science, FAST NUCES"
-      school_logo: "images/FAST-NU-logo.png"
+      school_logo: "images/FAST-NU.png"
       advisor:
         name: "Dr. Rafi"
         url: "https://khi.nu.edu.pk/personnel/dr-muhammad-rafi-phd/"
