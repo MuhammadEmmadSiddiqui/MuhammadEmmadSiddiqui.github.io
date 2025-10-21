@@ -46,7 +46,7 @@ publications:
       journal: "IEEE Explore, 2023"
       venue: "TABUK"
       tldr: "We introduce Mango Health Detection, a cutting-edge detection model that demonstrates superior performance and safety capabilities."
-      image: "images/Paper #01.jpeg"
+      image: "images/Paper_01.png"
       links:
         paper: "https://ieeexplore.ieee.org/abstract/document/10273915"
     
