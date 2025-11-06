@@ -26,10 +26,12 @@ research:
 ```yaml
 news:
   items:
+    - date: "Nov 2025"
+      content: '🎉 Emmad triumphs! Thesis "Risk-Incorporated Retrieval for Facial Images Using Uncertainty Quantification" successfully defended at FAST NUCES!'
     - date: "Jul 2025"
       content: "🎉 Emmad has been appointed as a Teaching Assistant at FAST NUCES!"
     - date: "Aug 2023"
-      content: "📘 Our paper *'Mango Farming Optimization With AI: Boosting Cultivation Efficiency'* was accepted at an IEEE conference in Tabuk. Emmad will present the poster at Booth #2817, Tabuk, Saudi Arabia."
+      content: "📘 Emmad's paper *'Mango Farming Optimization With AI: Boosting Cultivation Efficiency'* was accepted at an IEEE conference in Tabuk. Emmad will present the poster at Booth #2817, Tabuk, Saudi Arabia."
     - date: "Sep 2022"
       content: "🏆 Our undergraduate Final Year Project received the **Best FYP Award 2022** at NED University of Engineering & Technology!"
     - date: "Feb 2022"
@@ -40,15 +42,25 @@ news:
 ```yaml
 publications:
   items:
+    - year: "2025"
+      title: "Risk-Incorporated Retrieval for Facial Images Using Uncertainty Quantification"
+      authors: "<strong>Muhammad Emmad Siddiqui</strong>
+      journal: ""
+      venue: ""
+      tldr: "Proposes a risk-aware facial-image retrieval framework that fuses uncertainty estimation & conformal prediction with self-supervised (DINO) feature learning to reduce risky misidentifications. Shows on SCFace that accuracy improves and confidence-driven, dynamic result-set restrictions let the system control retrieval risk."
+      image: "images/MS_Thesis.png"
+      links:
+        paper: ""
     - year: "2023"
       title: "Mango Farming Optimization With AI: Boosting Cultivation Efficiency"
       authors: "<strong>Syed Umaid Ahmed</strong>, <strong>Muhammad Emmad Siddiqui</strong>"
       journal: "IEEE Explore, 2023"
-      venue: "TABUK"
+      venue: "ICCIT IEEE, TABUK"
       tldr: "We introduce Mango Health Detection, a cutting-edge detection model that demonstrates superior performance and safety capabilities."
       image: "images/Paper_01.png"
       links:
         paper: "https://ieeexplore.ieee.org/abstract/document/10273915"
+
     
 ```
 
