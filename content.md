@@ -43,7 +43,7 @@ news:
 publications:
   items:
     - year: "2025"
-      title: "Risk-Incorporated Retrieval for Facial Images Using Uncertainty Quantification"
+      title: "A Step Forward Towards Trustworthy Risk-Aware Facial Retrieval (RA-FR)"
       authors: "<strong>Muhammad Emmad Siddiqui</strong>
       journal: ""
       venue: ""
@@ -68,7 +68,7 @@ publications:
 ```yaml
 education:
   items:
-    - period: "2023.08 - 2025.12 (Expected)"
+    - period: "2023.08 - 2025.12"
       degree: "M.S."
       school: "Data Science, FAST NUCES"
       school_logo: "images/FAST-NU.png"
