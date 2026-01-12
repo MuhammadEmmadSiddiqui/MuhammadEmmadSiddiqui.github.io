@@ -4,9 +4,9 @@
 ```yaml
 about:
   content: |
-    Hi there! I'm an MS student at <strong>FAST NUCES</strong> <img src="images/FAST-NU.png" alt="FAST Logo" style="height:1em; vertical-align:middle;">, Department of Data Science, advised by <strong><a href="https://khi.nu.edu.pk/personnel/dr-muhammad-rafi-phd/" style="color: DarkSlateBlue;">Dr. Rafi</a></strong>. I obtained my B.E. degree from the <strong>School of Engineering, NED University</strong> <img src="images/logo_300x200.png" alt="NED Logo" style="height:1em; vertical-align:middle;">. Currently, I am working as a Teaching Assistant at FAST NUCES for the course of <strong>Advanced Computer Vision</strong> for post-grad level under the guidance of <strong><a href="https://khi.nu.edu.pk/personnel/dr-maria-siddiqua-phd/" style="color: DarkSlateBlue;">Dr. Maria </a></strong> also worked as a Data Scientist at <strong>GSK</strong> <img src="images/GSK.png" alt="GSK Logo" style="height:1em; vertical-align:middle;"> for their global supply chain tech department building computer vision solutions.  
+    Hi there! I'm an AI researcher and a MS graduate in Data Science from <strong>FAST NUCES</strong> <img src="images/FAST-NU.png" alt="FAST Logo" style="height:1em; vertical-align:middle;">, advised by <strong><a href="https://khi.nu.edu.pk/personnel/dr-muhammad-rafi-phd/" style="color: DarkSlateBlue;">Dr. Rafi</a></strong>. I obtained my B.E. degree from the <strong>School of Engineering, NED University</strong> <img src="images/logo_300x200.png" alt="NED Logo" style="height:1em; vertical-align:middle;">. Previously, I have worked as a Teaching Assistant at FAST NUCES for the course of <strong>Advanced Computer Vision</strong> for post-grad level with <strong><a href="https://khi.nu.edu.pk/personnel/dr-maria-siddiqua-phd/" style="color: DarkSlateBlue;">Dr. Maria </a></strong> and also worked as a Data Scientist at <strong>GSK</strong> <img src="images/GSK.png" alt="GSK Logo" style="height:1em; vertical-align:middle;"> for their global supply chain tech department building computer vision solutions.  
 
-    My research interests lie in developing reliable machine learning algorithms and uncertainty quantification for risk-aware decision-making in computer vision and natural language processing frameworks for real-world applications with a particular focus on the alignment of Large Foundation Models (LLMs and VLMs).
+   My research focuses on Trustworthy & reliable AI, utilizing Conformal Inference and Uncertainty Quantification to build statistically reliable machine learning systems. My work is rooted in risk-aware decision-making for Computer Vision and Natural Language Processing..
 
 ```
 
@@ -16,9 +16,9 @@ about:
 research:
   items:
     - keyword: "Trustworthy AI"
-      description: "Safety, Uncertainty, etc."
+      description: "Conformal Inference, Uncertainty Quantification, and Risk Control."
     - keyword: "Alignment of Foundation Models"
-      description: "LLMs, VLMs."
+      description: "Applying statistical guarantees to LLMs and VLMs to ensure robust and safe behavior."
   invite: "I am very excited about potential collaboration opportunities! If you share similar research interests and find my work interesting, I warmly welcome you to contact me via email!"
 ```
 
