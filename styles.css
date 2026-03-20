@@ -1013,6 +1013,16 @@ a {
     color: #fff;
 }
 
+.globe-card {
+    margin-top: 1.2rem;
+    background-color: var(--bg-secondary);
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: var(--card-shadow);
+    text-align: center;
+    overflow: hidden;
+}
+
 .site-footer {
     width: 100%;
     margin-top: 2.5rem;
