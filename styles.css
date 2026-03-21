@@ -915,10 +915,12 @@ a {
    AI Chat Widget
    ============================================================ */
 .chat-widget {
-    position: fixed;
-    bottom: 1.6rem;
-    right: 1.6rem;
-    z-index: 9999;
+    position: fixed !important;
+    bottom: 2rem !important;
+    right: 2rem !important;
+    top: auto !important;
+    left: auto !important;
+    z-index: 99999;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
