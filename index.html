@@ -219,6 +219,54 @@
     </div>
   </footer>
 
+  <!-- ===== AI Chat Widget ===== -->
+  <div class="chat-widget" id="chatWidget">
+
+    <!-- Floating Action Button -->
+    <button class="chat-fab" id="chatFab" aria-label="Chat with Emmad's AI assistant">
+      <i class="fas fa-robot chat-fab-open-icon"></i>
+      <i class="fas fa-times chat-fab-close-icon"></i>
+    </button>
+
+    <!-- Chat Panel -->
+    <div class="chat-panel" id="chatPanel" aria-label="AI Chat" role="dialog">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <div class="chat-avatar">
+            <img src="images/Avatar.png" alt="Emmad">
+          </div>
+          <div class="chat-header-text">
+            <span class="chat-title">Ask about Emmad</span>
+            <span class="chat-subtitle"><span class="chat-status-dot"></span>AI Assistant</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-messages" id="chatMessages">
+        <div class="chat-message bot-message">
+          <p>Hi! I'm Emmad's AI assistant. Ask me anything about his research, experience, or publications!</p>
+        </div>
+      </div>
+
+      <div class="chat-input-area">
+        <input
+          type="text"
+          id="chatInput"
+          class="chat-input"
+          placeholder="Ask me anything…"
+          maxlength="500"
+          autocomplete="off"
+          aria-label="Type your message"
+        >
+        <button class="chat-send-btn" id="chatSend" aria-label="Send message">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+
+  </div>
+  <!-- ===== End AI Chat Widget ===== -->
+
   <script src="script.js"></script>
 </body>
 </html>

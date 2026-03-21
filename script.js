@@ -221,6 +221,115 @@ function setAllLinksBlank() {
     });
 }
 
+// ============================================================
+// AI Chat Widget
+// ============================================================
+
+// *** IMPORTANT: Replace this URL with your own Vercel deployment URL after deploying the backend ***
+const CHAT_API_URL = 'https://personalaiassistant-muhammademmadsiddiquis-projects.vercel.app/api/chat';
+
+(function initChatWidget() {
+    const widget  = document.getElementById('chatWidget');
+    const fab     = document.getElementById('chatFab');
+    const panel   = document.getElementById('chatPanel');
+    const input   = document.getElementById('chatInput');
+    const sendBtn = document.getElementById('chatSend');
+    const msgs    = document.getElementById('chatMessages');
+
+    if (!widget || !fab) return;
+
+    // Toggle open/closed
+    fab.addEventListener('click', () => {
+        widget.classList.toggle('open');
+        if (widget.classList.contains('open')) {
+            setTimeout(() => input.focus(), 220);
+        }
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && widget.classList.contains('open')) {
+            widget.classList.remove('open');
+        }
+    });
+
+    // Send on Enter
+    input.addEventListener('keydown', e => {
+        if (e.key === 'Enter' && !e.shiftKey) {
+            e.preventDefault();
+            sendMessage();
+        }
+    });
+
+    sendBtn.addEventListener('click', sendMessage);
+
+    function appendMessage(text, role) {
+        const div = document.createElement('div');
+        div.className = `chat-message ${role === 'user' ? 'user-message' : 'bot-message'}`;
+        const p = document.createElement('p');
+        p.textContent = text;
+        div.appendChild(p);
+        msgs.appendChild(div);
+        msgs.scrollTop = msgs.scrollHeight;
+        return div;
+    }
+
+    function showTyping() {
+        const div = document.createElement('div');
+        div.className = 'chat-typing';
+        div.id = 'chatTyping';
+        div.innerHTML = '<span></span><span></span><span></span>';
+        msgs.appendChild(div);
+        msgs.scrollTop = msgs.scrollHeight;
+    }
+
+    function removeTyping() {
+        const t = document.getElementById('chatTyping');
+        if (t) t.remove();
+    }
+
+    async function sendMessage() {
+        const text = input.value.trim();
+        if (!text) return;
+
+        input.value = '';
+        input.disabled = true;
+        sendBtn.disabled = true;
+
+        appendMessage(text, 'user');
+        showTyping();
+
+        try {
+            const res = await fetch(CHAT_API_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: text })
+            });
+
+            removeTyping();
+
+            if (!res.ok) {
+                throw new Error(`Server error: ${res.status}`);
+            }
+
+            const data = await res.json();
+            appendMessage(data.reply || 'Sorry, I could not get a response.', 'bot');
+        } catch (err) {
+            removeTyping();
+            appendMessage(
+                CHAT_API_URL.includes('your-project-name')
+                    ? 'The backend URL has not been configured yet. Please deploy the backend and update CHAT_API_URL in script.js.'
+                    : 'Sorry, I could not connect to the server. Please try again later.',
+                'bot'
+            );
+        } finally {
+            input.disabled = false;
+            sendBtn.disabled = false;
+            input.focus();
+        }
+    }
+})();
+
 // Initialize page after DOM is ready
 document.addEventListener('DOMContentLoaded', async () => {
     await initializeNavigation();
