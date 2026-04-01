@@ -26,6 +26,8 @@ research:
 ```yaml
 news:
   items:
+    - date: "Apr 2026"
+      content: '🎉 Paper *"A Step Forward Towards Trustworthy Risk-Aware Facial Retrieval (RA-FR)"* accepted at **ICPR 2026** (28th International Conference on Pattern Recognition), Lyon, France!'
     - date: "Nov 2025"
       content: '🎉 Emmad triumphs! Thesis "Risk-Incorporated Retrieval for Facial Images Using Uncertainty Quantification" successfully defended at FAST NUCES!'
     - date: "Jul 2025"
@@ -42,11 +44,11 @@ news:
 ```yaml
 publications:
   items:
-    - year: "2025"
+    - year: "2026"
       title: "A Step Forward Towards Trustworthy Risk-Aware Facial Retrieval (RA-FR)"
-      authors: "<strong>Muhammad Emmad Siddiqui</strong>
-      journal: ""
-      venue: ""
+      authors: "<strong>Muhammad Emmad Siddiqui</strong>"
+      journal: "ICPR 2026 — 28th International Conference on Pattern Recognition, Lyon, France"
+      venue: "ICPR 2026"
       tldr: "Proposes a risk-aware facial-image retrieval framework that fuses uncertainty estimation & conformal prediction with self-supervised (DINO) feature learning to reduce risky misidentifications. Shows on SCFace that accuracy improves and confidence-driven, dynamic result-set restrictions let the system control retrieval risk."
       image: "images/MS_Thesis.png"
       links:
