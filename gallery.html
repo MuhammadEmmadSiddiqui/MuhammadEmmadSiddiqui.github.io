@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Muhammad Emmad Siddiqui</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Quicksand:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/Avatar.png">
+  <link rel="apple-touch-icon" href="images/Avatar.png">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-content">
+      <a href="index.html" class="logo" style="text-decoration:none;">Muhammad Emmad Siddiqui</a>
+      <div class="nav-wrapper">
+        <ul class="nav-links">
+          <li><a href="index.html#about"><i class="fas fa-user-circle"></i> About</a></li>
+          <li><a href="index.html#research"><i class="fas fa-microscope"></i> Research</a></li>
+          <li><a href="index.html#news"><i class="fas fa-newspaper"></i> News</a></li>
+          <li><a href="index.html#publications"><i class="fas fa-book"></i> Publications</a></li>
+          <li><a href="index.html#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+          <li><a href="index.html#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+          <li><a href="gallery.html" class="nav-current"><i class="fas fa-images"></i> Gallery</a></li>
+          <li class="theme-btn-wrapper">
+            <button class="theme-btn" id="themeBtn" title="Toggle Theme">
+              <i class="fas fa-circle-half-stroke"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <div class="gallery-hero">
+    <div class="gallery-hero-inner">
+      <div class="gallery-hero-badge"><i class="fas fa-images"></i> My Library</div>
+      <h1>Life Outside the <span>Lab</span></h1>
+      <p>Because a researcher is more than their research.</p>
+    </div>
+  </div>
+
+  <!-- Gallery Content -->
+  <div class="gallery-container">
+
+    <!-- ===== SPORTS ===== -->
+    <section class="gallery-section">
+      <div class="section-header">
+        <i class="fas fa-table-tennis-paddle-ball"></i>
+        <h2>Sports</h2>
+      </div>
+      <p class="gallery-section-intro">I love playing table tennis, badminton, and cricket (bowling all-rounder).</p>
+      <div class="media-grid media-grid--wide">
+        <div class="media-card video-card">
+          <div class="video-wrapper">
+            <video controls preload="metadata">
+              <source src="images/Video Project.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <p class="media-caption">A random clip I accidentally recorded during a knocking session of table tennis.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TRAVEL & PLACES ===== -->
+    <section class="gallery-section">
+      <div class="section-header">
+        <i class="fas fa-map-marker-alt"></i>
+        <h2>Travel &amp; Places</h2>
+      </div>
+      <p class="gallery-section-intro">Believe me, this place is not owned by me — not even by my ancestors — but by the Mohatta family. It could have been mine had I been born in the 1800s. Clearly, I was born in the wrong era. I love heritage sites and the people of those times.</p>
+      <div class="media-grid">
+
+        <!-- Save this image as: images/travel-selfie.jpg -->
+        <div class="media-card" onclick="openLightbox(this)">
+          <img src="images/travel-selfie.jpg" alt="Selfie at Mohatta Palace"
+               loading="lazy"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="img-placeholder-box" style="display:none;">
+            <i class="fas fa-image"></i>
+            <span>Save your selfie photo as<br><code>images/travel-selfie.jpg</code></span>
+          </div>
+          <p class="media-caption">At Mohatta Palace — wish it were mine.</p>
+        </div>
+
+        <!-- Save this image as: images/travel-palace.jpg -->
+        <div class="media-card" onclick="openLightbox(this)">
+          <img src="images/travel-palace.jpg" alt="Mohatta Palace full view"
+               loading="lazy"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="img-placeholder-box" style="display:none;">
+            <i class="fas fa-image"></i>
+            <span>Save your palace photo as<br><code>images/travel-palace.jpg</code></span>
+          </div>
+          <p class="media-caption">Mohatta Palace, Karachi — a piece of living history.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== HOBBIES ===== -->
+    <section class="gallery-section">
+      <div class="section-header">
+        <i class="fas fa-heart"></i>
+        <h2>Hobbies</h2>
+      </div>
+      <div class="media-grid">
+
+        <div class="media-card" onclick="openLightbox(this)">
+          <img src="images/WhatsApp Image 2026-04-02 at 3.28.28 PM.jpeg"
+               alt="My aquarium with mollies and angelfish" loading="lazy">
+          <p class="media-caption">An aquarium I own with beautiful mollies and angelfish. You won't find Nemo and Dory here — they're saltwater fish. I wish I had another tank for that.</p>
+        </div>
+
+        <!-- Save this image as: images/moon-lamp.jpg -->
+        <div class="media-card" onclick="openLightbox(this)">
+          <img src="images/moon-lamp.jpg" alt="Salt moon lamp on side desk"
+               loading="lazy"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="img-placeholder-box" style="display:none;">
+            <i class="fas fa-image"></i>
+            <span>Save your moon lamp photo as<br><code>images/moon-lamp.jpg</code></span>
+          </div>
+          <p class="media-caption">I take good photos sometimes — here's my side desk with a salt moon lamp.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== MEMORABLE MOMENTS ===== -->
+    <section class="gallery-section">
+      <div class="section-header">
+        <i class="fas fa-camera-retro"></i>
+        <h2>Memorable Moments</h2>
+      </div>
+      <div class="media-grid">
+
+        <!-- Save as: images/uni-class.jpg -->
+        <div class="media-card" onclick="openLightbox(this)">
+          <img src="images/uni-class.png" alt="University class group photo"
+               loading="lazy"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="img-placeholder-box" style="display:none;">
+            <i class="fas fa-image"></i>
+            <span>Save classroom photo as<br><code>images/uni-class.png</code></span>
+          </div>
+          <p class="media-caption">Some memorable moments from my university life.</p>
+        </div>
+
+        <!-- Save as: images/beach-group.jpg -->
+        <div class="media-card" onclick="openLightbox(this)">
+          <img src="images/beach-group.png" alt="Group of tech people at the beach"
+               loading="lazy"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="img-placeholder-box" style="display:none;">
+            <i class="fas fa-image"></i>
+            <span>Save beach photo as<br><code>images/beach-group.png</code></span>
+          </div>
+          <p class="media-caption">Too many tech people in one frame. I'm the youngest one among them.</p>
+        </div>
+
+        <!-- Save as: images/nephew.jpg -->
+        <div class="media-card" onclick="openLightbox(this)">
+          <img src="images/nephew.png" alt="With my nephew"
+               loading="lazy"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="img-placeholder-box" style="display:none;">
+            <i class="fas fa-image"></i>
+            <span>Save nephew photo as<br><code>images/nephew.png</code></span>
+          </div>
+          <p class="media-caption">I love being around my nephew. My whole world…</p>
+        </div>
+
+        <div class="media-card" onclick="openLightbox(this)">
+          <img src="images/WhatsApp Image 2026-04-02 at 3.38.24 PM.jpeg"
+               alt="Memorable academic moment" loading="lazy">
+          <p class="media-caption">For the record — the person behind me is not cheating. He's just stuck on a complex question, as am I, while I stare straight at my paper. (Huge credit to the photographer who captured this moment so perfectly.)</p>
+        </div>
+
+      </div>
+    </section>
+
+  </div><!-- end .gallery-container -->
+
+  <!-- Lightbox Overlay -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script>
+    // ── Theme Toggle (mirrors main site's localStorage pattern) ──────────
+    const themes = ['auto', 'light', 'dark'];
+    let themeIndex = 0;
+
+    function applyTheme(theme) {
+      const html = document.documentElement;
+      if (theme === 'auto') {
+        html.removeAttribute('data-theme');
+      } else {
+        html.setAttribute('data-theme', theme);
+      }
+      localStorage.setItem('theme', theme);
+    }
+
+    const saved = localStorage.getItem('theme') || 'auto';
+    themeIndex = themes.indexOf(saved);
+    if (themeIndex === -1) themeIndex = 0;
+    applyTheme(themes[themeIndex]);
+
+    document.getElementById('themeBtn').addEventListener('click', () => {
+      themeIndex = (themeIndex + 1) % themes.length;
+      applyTheme(themes[themeIndex]);
+    });
+
+    // ── Lightbox ──────────────────────────────────────────────────────────
+    function openLightbox(card) {
+      const img = card.querySelector('img');
+      if (!img || img.style.display === 'none') return; // don't open for placeholder
+      const lb = document.getElementById('lightbox');
+      const lbImg = document.getElementById('lightbox-img');
+      lbImg.src = img.src;
+      lbImg.alt = img.alt;
+      lb.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+
+    // Prevent lightbox close when clicking the image itself
+    document.getElementById('lightbox-img').addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
+  </script>
+</body>
+</html>
