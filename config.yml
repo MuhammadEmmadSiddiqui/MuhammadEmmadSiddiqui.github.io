@@ -4,7 +4,7 @@ profile:
   title: "AI Researcher"
   department: "MS Data Science"
   university: "FAST NUCES"
-  image: "images/Avatar.png"
+  image: "images/IMG-20221026-WA0088.jpg.jpeg"
 
 # Social media links
 social:
@@ -59,3 +59,7 @@ navigation:
     url: "#contact-anchor"
     icon: "fas fa-envelope"
     title: "Contact"
+  gallery:
+    url: "gallery.html"
+    icon: "fas fa-images"
+    title: "Gallery"
